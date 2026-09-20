@@ -104,11 +104,12 @@ cake.addEventListener("click", (e) => {
   }
 });
 
+// Đường dẫn đã được sửa xử lý khoảng trắng để không bị lỗi trên GitHub Pages
 const balloons = [
-  "asset/balloon/balloon (1).png",
-  "asset/balloon/balloon (2).png",
-  "asset/balloon/balloon (3).png",
-  "asset/balloon/balloon (4).png",
+  "./asset/balloon/balloon%20(1).png",
+  "./asset/balloon/balloon%20(2).png",
+  "./asset/balloon/balloon%20(3).png",
+  "./asset/balloon/balloon%20(4).png",
 ];
 const emojis = [
   "❤️",
@@ -162,7 +163,7 @@ candle.addEventListener("click", (e) => {
   e.stopPropagation();
   if (state === "lit") {
     candleSound.play().catch((e) => console.log("Candle sound deferred"));
-    candle.src = "asset/candle_no_fire.png";
+    candle.src = "./asset/candle_no_fire.png";
     updateInstruction("✨ HAPPY BIRTHDAY! ✨");
     state = "blown";
 
