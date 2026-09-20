@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Thêm ?v=1 để ép tải lại CSS mới nhất -->
+    <link rel="stylesheet" href="style.css?v=1" />
   </head>
 
   <body>
@@ -57,14 +58,15 @@
 
       <div class="container">
         <div class="cake-container">
+          <!-- Gọi đúng tên file có trên repo kèm đuôi chống cache -->
           <img
-            src="candle.png"
+            src="candle.png?v=1"
             alt="Candle"
             class="candle-img"
             id="candle-img"
           />
           <img
-            src="cake.png"
+            src="cake.png?v=1"
             alt="Cake"
             class="cake-img"
             id="cake-clickable"
@@ -77,7 +79,8 @@
       </div>
 
       <div class="letter-container" id="letter-container">
-        <img src="letter.png" alt="Letter" class="letter-img" />
+        <!-- Gọi đúng tên file -->
+        <img src="letter.png?v=1" alt="Letter" class="letter-img" />
         <div class="letter-text">Open</div>
       </div>
 
@@ -85,7 +88,6 @@
         <div class="fireworks-container" id="fireworks-container"></div>
         
         <div class="modal-content-wrapper">
-          
           <div class="css-bouquet">
             <div class="wrap-back"></div>
             <div class="stem stem-left"></div>
@@ -115,16 +117,16 @@
             </p>
           </div>
         </div>
-
       </div>
     </div>
 
-    <!-- Cập nhật chính xác tên file audio theo như trên GitHub -->
-    <audio id="bg-music" src="nhac.mp3" loop></audio>
-    <audio id="pop-sound" src="pop.mp3"></audio>
-    <audio id="candle-sound" src="candle.mp3"></audio>
-    <audio id="firework-sound" src="Firework.mp3"></audio>
+    <!-- Gọi đúng tên file Audio (chú ý chữ F in hoa của Firework) -->
+    <audio id="bg-music" src="nhac.mp3?v=1" loop></audio>
+    <audio id="pop-sound" src="pop.mp3?v=1"></audio>
+    <audio id="candle-sound" src="candle.mp3?v=1"></audio>
+    <audio id="firework-sound" src="Firework.mp3?v=1"></audio>
 
-    <script src="script.js"></script>
+    <!-- Thêm đuôi chống cache cho Javascript -->
+    <script src="script.js?v=1"></script>
   </body>
 </html>
