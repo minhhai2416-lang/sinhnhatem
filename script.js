@@ -104,7 +104,7 @@ cake.addEventListener("click", (e) => {
   }
 });
 
-// Chỉnh lại chuẩn theo file có dấu cách trên GitHub
+// Tên file bóng bay có chứa dấu cách, khớp 100% với ảnh của bạn
 const balloons = [
   "balloon (1).png",
   "balloon (2).png",
@@ -163,8 +163,8 @@ candle.addEventListener("click", (e) => {
   e.stopPropagation();
   if (state === "lit") {
     candleSound.play().catch((e) => console.log("Candle sound deferred"));
-    // File nến tắt đúng như trên ảnh
-    candle.src = "candle_no_fire.png";
+    // Tên file nến tắt đúng như danh sách file của bạn
+    candle.src = "candle_no_fire.png?v=1";
     updateInstruction("✨ HAPPY BIRTHDAY! ✨");
     state = "blown";
 
