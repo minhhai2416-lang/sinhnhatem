@@ -104,11 +104,12 @@ cake.addEventListener("click", (e) => {
   }
 });
 
+// Chỉnh lại chuẩn theo file có dấu cách trên GitHub
 const balloons = [
-  "balloon%20(1).png",
-  "balloon%20(2).png",
-  "balloon%20(3).png",
-  "balloon%20(4).png",
+  "balloon (1).png",
+  "balloon (2).png",
+  "balloon (3).png",
+  "balloon (4).png",
 ];
 const emojis = [
   "❤️",
@@ -162,6 +163,7 @@ candle.addEventListener("click", (e) => {
   e.stopPropagation();
   if (state === "lit") {
     candleSound.play().catch((e) => console.log("Candle sound deferred"));
+    // File nến tắt đúng như trên ảnh
     candle.src = "candle_no_fire.png";
     updateInstruction("✨ HAPPY BIRTHDAY! ✨");
     state = "blown";
